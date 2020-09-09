@@ -27,15 +27,15 @@ router.delete('/users/me/avatar',auth,async (req,resp)=>{
     resp.send()
 })
 
-const sharp = require('sharp')
-router.post('/users/me/avatar',auth,upload.single('upload'),async(req,resp)=>{
-    const buffer = await sharp(req.file.buffer).resize({width:250, height:250}).png().toBuffer()
-    req.user.avatar = buffer
-    await req.user.save()
-    resp.send()
-},(err,req,resp,next)=>{
-    resp.status(400).send({error:err.message})
-})
+// //const sharp = require('sharp')
+// router.post('/users/me/avatar',auth,upload.single('upload'),async(req,resp)=>{
+//     //const buffer = await sharp(req.file.buffer).resize({width:250, height:250}).png().toBuffer()
+//     req.user.avatar = buffer
+//     await req.user.save()
+//     resp.send()
+// },(err,req,resp,next)=>{
+//     resp.status(400).send({error:err.message})
+// })
 router.post('/users',async (req,resp)=>{
     const user = new User(req.body)
     // user.save().then(()=>{
