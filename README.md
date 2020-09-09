@@ -1,6 +1,6 @@
 
-Task Manager API
-Contents
+#Task Manager API
+#Contents
 What It Is
 What We Used
 Additional Dependancies
@@ -13,7 +13,7 @@ Github Link
 What It Is
 This is a back-end task manager application made with JavaScript, Node.js, Express, MongoDB and Mongoose.js. It allows you to create an account through the API and manage tasks that you can add, view, edit or delete. It was created with the main intention of building a Node project with a NoSql database.
 
-What We Used
+#What We Used
 JavaScript
 Node.js
 Express
@@ -42,7 +42,7 @@ Ex. MONGODB_URL=mongodb://127.0.0.1:27017/my-app-name
 Using the API
 Main url https://moss-task-manager.herokuapp.com
 
-User Routes
+#User Routes
 
 Create user account - POST /users - name, email and password are required
 Read user account info - GET /users/me - Auth required (jwt)
@@ -69,7 +69,7 @@ sortBy=desc - can sort results in ascending or descending order
 MVP (Minimum Viable Product)
 The main goal was to work with a NoSQL database and build a simple API that could be used for a task manager application. Users can create accounts, login, logout, add and delete profile avatars as well as create and manage tasks they create. It completes all of the main objectives and I feel confident building and maintaining a NoSQL database now.
 
-Future Features
+#Future Features
 A front-end UI so users can interact directly with the API.
 Ability to make tasks public so other users can view them.
 Add more options to task collection, a location and time due for example
