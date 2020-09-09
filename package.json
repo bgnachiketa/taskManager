@@ -6,7 +6,7 @@
     "node": "10.19.0"
   },
   "scripts": {
-    "start": "node src/index,js",
+    "start": "node src/index.js",
     "dev": "env-cmd ./config/dev.env nodemon src/index.js"
   },
   "keywords": [],
